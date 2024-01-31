@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Content meta tags -->
+    <meta name="description" content="Your favourite chat app."/>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <meta name="keywords" content="Attentok, attentok.com, chat app, video call, group chat, live chat, web chat, online chat"/>
+    <meta name="author" content="Prakash Maria Liju (https://liju.me)">
+
+    <!-- Twitter cards -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@attentok"/>
+    <meta name="twitter:title" content="Attentok"/>
+    <meta name="twitter:description" content="Your favourite chat app."/>
+    <meta name="twitter:image" content="https://attentok.com/media/thumbnail.png" />
+    <meta name="twitter:image:alt" content="Thumbnail image"/>
+
+    <!-- Open graph -->
+    <meta property="og:url"                content="https://attentok.com" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Attentok" />
+    <meta property="og:description"        content="Your favourite chat app." />
+    <meta property="og:image"              content="https://attentok.com/media/thumbnail.png" />
+
+    <title>Attentok</title>
+    <link rel="icon" type="image/x-icon" href="https://attentok.com/media/favicon.svg"/>
+    <style>
+        body{
+            margin: 2rem;
+            background-color: white;
+            font-family: "Segoe UI", Tahoma, Helvetica, Sans-Serif, serif;
+            font-style: normal;
+            font-size: 14px;
+        }
+        .startup_logo{
+            text-align: center;
+        }
+        .startup_logo .title{
+            font-size: 3rem;
+        }
+        .banner{
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .banner .title{
+            font-size: 2rem;
+        }
+        .banner .text{
+            font-size: 1rem;
+        }
+
+        .feature{
+            margin: 2rem;
+            box-sizing: border-box;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .feature .title{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .feature .text{
+            font-size: 1rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .feature .os{
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .feature .text .list{
+            padding: .5rem;
+            border: 1px solid #d9e1ec;
+            border-radius: 4px;
+            background: linear-gradient(89.84deg,rgba(230,36,174,.15) .34%,rgba(94,58,255,.15) 16.96%,rgba(10,136,255,.15) 34.66%,rgba(75,191,80,.15) 50.12%,rgba(137,206,0,.15) 66.22%,rgba(239,183,0,.15) 82%,rgba(246,73,0,.15) 99.9%);
+        }
+        .feature .list li{
+            padding: .3rem;
+        }
+
+        .signup{
+            width: 100%;
+            text-align: center;
+            background-color: #f5f8ff;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+        .signup input[type=text]{
+            height: 1rem;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        }
+
+        .send{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 6px 12px;
+            background-color: #4d90fe;
+            background-image: linear-gradient(#4d90fe 0px,#4787ed 100%);
+            border: 1px solid #3079ed;
+            border-radius: .3rem;
+            color: #fff;
+            cursor: pointer;
+        }
+        .send:hover{
+            background-color: #357ae8;
+            background-image: linear-gradient(#4d90fe 0px,#357ae8 100%);
+            border: 1px solid #2f5bb7;
+            color: #fff;
+        }
+        .send:active{
+            opacity: .7;
+        }
+        #message{
+            background-color: palegreen;
+            padding: .5rem;
+            display: none;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem;
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+        .right{
+            flex-direction: row-reverse;
+        }
+        .card .title{
+            font-size: 2rem;
+        }
+        .card .text{
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        function signup(){
+            em=document.getElementById("email");
+            if(em.value.length!=0){
+                em.value='';
+                document.getElementById('message').style.display='block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="startup_logo">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="63px" height="74px" viewBox="-0.5 -0.5 63 74"><defs/><g><path d="M 0 24.5 L 0 10 Q 0 0 10 0 L 50 0 Q 60 0 60 10 L 60 39 Q 60 49 60 59 L 60 70 L 50.81 57.14 Q 45 49 35 49 L 10 49 Q 0 49 0 39 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" transform="translate(2,3)" opacity="0.25"/><path d="M 0 24.5 L 0 10 Q 0 0 10 0 L 50 0 Q 60 0 60 10 L 60 39 Q 60 49 60 59 L 60 70 L 50.81 57.14 Q 45 49 35 49 L 10 49 Q 0 49 0 39 Z" fill="#3399ff" stroke="#ccffff" stroke-miterlimit="10" pointer-events="all"/></g></svg>
+        <div class="title">Attentok</div>
+    </div>
+    <div class="banner">
+        <div class="title">
+            Chat and video call with your friends, family and team.
+        </div>
+        <div class="text">
+            Attentok is your favourite chat app. we can chat, share photos and make video calls and voice calls 1-1 and in group.
+        </div>
+    </div>
+    <div class="signup">
+        <div class="form">
+            <input type="text" placeholder="Email id" id="email"/>
+            <button class="send" onclick="signup();">Sign up</button>
+        </div>
+        <div id="message">Your email id is successfully added to our waiting list !!. you will receive an invitation soon to sign up for our free tier.</div>
+    </div>
+    <div class="feature">
+        <div class="text">
+            <div class="list">
+                <div class="title">
+                    Free tier
+                </div>
+                <ul>
+                    <li>Secure private chat</li>
+                    <li>Group chat</li>
+                    <li>Photos, videos and document sharing</li>
+                    <li>Video call</li>
+                    <li>Voice call</li>
+                </ul>
+            </div>
+            <div class="list">
+                <div class="title">
+                    For enterprises and small businesses
+                </div>
+                <ul>
+                    <li>Business internal chat system with own domain name</li>
+                    <li>High availability</li>
+                    <li>Org specific customization and personalisation</li>
+                    <li>Special tools, controls, analytics and dashboards for business leadership and power users.</li>
+                    <li>API for integration with other apps and email</li>
+                    <li>Support for business single sign on (SSO) authentication</li>
+                    <li>Periodic data backup</li>
+                    <li>Secure file-vault for business data</li>
+                    <li>24/7 dedicated support</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="os">
+            <b>Open source version for larger community interests:</b> <a href="https://github.com/ppml38/sodium">https://github.com/ppml38/sodium</a>
+            <br>Originally released during COVID-19 for medical professionals to communicate with patients while maintaining social distance.
+
+        </div> -->
+    </div>
+    <div class="card">
+        <div class="photo">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6gjOZG5VbRk?si=UTY98Dt2e9Y2Sqze" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="desc">
+            <div class="title">How it works?</div>
+            <div class="text">Just signup and chat with your friends online. its that simple.</div>
+        </div>
+    </div>
+    <div class="card right">
+        <div class="photo">
+            <a href="https://www.producthunt.com/products/attentok?utm_source=badge-follow&utm_medium=badge&utm_souce=badge-attentok" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/follow.svg?product_id=540513&theme=light" alt="Attentok - Your&#0032;favourite&#0032;chat&#0032;app | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        </div>
+        <div class="desc">
+            <div class="title">Follow and support us on product hunt</div>
+            <div class="text">Check out and support us on product hunt</div>
+        </div>
+    </div>
+</body>
+</html>
